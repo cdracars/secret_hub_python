@@ -1,0 +1,25 @@
+[project]
+name = "secret_hub_python"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Cody Dracars", email = "cdracars@gmail.com"},
+]
+dependencies = [
+    "requests>=2.32.3",
+    "cryptography>=43.0.1",
+    "click>=8.1.7",
+    "cfs-config-library @ git+ssh://git@github.com/carlislefsp/cfs_config_library.git@main",
+    "pynacl>=1.5.0",
+    "types-requests>=2.32.0.20240914",
+    "pydantic>=2.9.2",
+    "python-dotenv>=1.0.1",
+    "pydantic-settings>=2.5.2",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm]
+distribution = false
+includes = ["src"]
